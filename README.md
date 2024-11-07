@@ -42,3 +42,28 @@
     ```bash
     python manage.py migrate
     ```
+## Guias úteis para o desenvolvimento:
+**1 - Migrações e alterações do banco de dados:**
+  
+  - Utilize o seguinte comando para criar os arquivos de migração com base nas mudanças feitas nos modelos:
+     ```bash
+    python manage.py makemigrations
+    ```
+     
+  - Após o uso do referido comando o arquivo de migração será criado na pasta migrations do app onde as modificações doram realizadas. O Django automaticamente detecta as mudanças nos modelos e cria as migrações correspondentes.
+    
+  - Para visualizar as instruções SQL que serão executadas na migração, use o comando sqlmigrate seguido pelo nome do app e o número da migração gerada:
+      ```bash
+      python manage.py sqlmigrate nome_do_app numero_da_migracao
+       ```
+  - O número da migração se trata do número do arquivo de migração gerado pelo comando anterior.
+
+  - Por exemplo, se a migração gerada foi 0001_initial no app meu_app, você pode visualizar as instruções SQL com:
+      ```bash
+      python manage.py sqlmigrate meu_app 0001
+       ```
+      
+  - Agora, para aplicar as migrações no banco de dados, use o comando migrate:
+     ```bash
+    python manage.py migrate
+       ```
