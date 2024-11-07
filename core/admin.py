@@ -5,5 +5,7 @@ from core.models import Evento
 
 class EventoAdmin(admin.ModelAdmin):
     list_display = ('título', 'data_evento', 'data_criacao')
+    list_filter = ('usuario' ,)
+    
 
 admin.site.register(Evento, EventoAdmin)
