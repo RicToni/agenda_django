@@ -8,4 +8,5 @@ class Evento(models.Model):
     data_evento = models.DateTimeField()
     data_criacao = models.DateTimeField(auto_now=True)
 
-    
+    def __str__(self):
+        return self.título
