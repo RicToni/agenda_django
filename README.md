@@ -67,3 +67,26 @@
      ```bash
     python manage.py migrate
        ```
+     <hr>
+**2 - Criação do SuperUser:**
+ - Antes de criar o superusuário, é necessário que o banco de dados esteja atualizado. Caso ainda não tenha aplicado as migrações, utilize os comandos do topico 1.
+ - Após garantir que o banco de dados está atualizado, use o comando createsuperuser para criar um superusuário:
+   
+   ```bash
+   python manage.py createsuperuser
+      ```
+ - O Django solicitará algumas informações básicas para o superusuário:
+
+    - Username: Insira o nome de usuário desejado. Esse nome será usado para fazer login na administração do Django.
+
+    - Email: Insira o email do superusuário. Esse campo é opcional, mas recomendado para uma boa gestão de contas.
+
+    - Password: Insira uma senha e confirme-a. Lembre-se de escolher uma senha forte.
+  
+  - Após preencher essas informações, o superusuário será criado. Agora, você pode acessá-lo na interface de administração do Django, geralmente em:
+    ```bash
+    http://localhost:8000/admin
+      ```
+
+    
+
