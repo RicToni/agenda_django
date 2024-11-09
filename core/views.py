@@ -3,6 +3,6 @@ from core.models import Evento
 
 # Create your views here.
 def lista_eventos(request):
-    evento = Evento.objects.get(id=1)
-    response = {'evento': evento }
+    eventos = Evento.objects.all()
+    response = {'eventos': eventos }
     return render(request, 'agenda.html', response)
