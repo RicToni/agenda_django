@@ -1,8 +1,7 @@
 # Agenda Django 
 - O presente repositório se trata de um pequeno projeto desenvolvido durante meus estudos em Django.
-- O projeto se trata de uma agenda de tarefas pessoais. Cada usuário tera sua agenda com suas tarefas. Há também uma admin page e toda a aplicação conta com autenticação. 
-
-
+- O projeto se trata de uma agenda de tarefas pessoais. Cada usuário tera sua agenda com suas tarefas. Há também uma admin page e toda a aplicação conta com autenticação.
+- A idéia veio da necessidade pessoal minha e da minha esposa de organizarmos nossos compromissos, sejam os individuais ou em conjunto, visto que temos um bebê recém nascido em casa e atualmente temos muitos exames e consultas referentes ao bebê. 
 
 ## Clonando e preparando seu ambiente de trabalho:
 - Clone o repositório:
