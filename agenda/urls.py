@@ -21,5 +21,5 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('agenda/', views.lista_eventos),
-    path('', views.index)
+    path('', views.index) # define nossa página inicial como a index (presente na views)
 ]
